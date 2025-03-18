@@ -1,0 +1,23 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev":"npx @tailwindcss/cli -i ./src/input.css -o ./main/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MBadarMurtaza/Weather-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MBadarMurtaza/Weather-App/issues"
+  },
+  "homepage": "https://github.com/MBadarMurtaza/Weather-App#readme",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.14",
+    "tailwindcss": "^4.0.14"
+  }
+}
