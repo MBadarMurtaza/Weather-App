@@ -8,8 +8,9 @@
       "Courier New", monospace;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --text-2xl: 1.5rem;
-    --text-2xl--line-height: calc(2 / 1.5);
+    --font-weight-light: 300;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-font-feature-settings: var(--font-sans--font-feature-settings);
     --default-font-variation-settings: var(
@@ -172,14 +173,14 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .-mt-\[6\] {
-    margin-top: calc(6 * -1);
-  }
   .-mt-\[6px\] {
     margin-top: calc(6px * -1);
   }
   .-mt-\[10px\] {
     margin-top: calc(10px * -1);
+  }
+  .mt-\[10px\] {
+    margin-top: 10px;
   }
   .mt-\[30px\] {
     margin-top: 30px;
@@ -190,9 +191,6 @@
   .mt-\[100px\] {
     margin-top: 100px;
   }
-  .mr-\[10p\] {
-    margin-right: 10p;
-  }
   .mr-\[10px\] {
     margin-right: 10px;
   }
@@ -202,11 +200,20 @@
   .mb-0 {
     margin-bottom: calc(var(--spacing) * 0);
   }
+  .ml-\[10px\] {
+    margin-left: 10px;
+  }
   .box-border {
     box-sizing: border-box;
   }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
+  }
+  .hidden {
+    display: none;
   }
   .table {
     display: table;
@@ -309,15 +316,14 @@
   .text-center {
     text-align: center;
   }
+  .text-left {
+    text-align: left;
+  }
   .font-sans {
     font-family: var(--font-sans);
   }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-  .text-\[20px\] {
-    font-size: 20px;
+  .text-\[14px\] {
+    font-size: 14px;
   }
   .text-\[28px\] {
     font-size: 28px;
@@ -332,10 +338,6 @@
     --tw-font-weight: 18px;
     font-weight: 18px;
   }
-  .font-\[28px\] {
-    --tw-font-weight: 28px;
-    font-weight: 28px;
-  }
   .font-\[400\] {
     --tw-font-weight: 400;
     font-weight: 400;
@@ -343,6 +345,18 @@
   .font-\[500\] {
     --tw-font-weight: 500;
     font-weight: 500;
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
   }
   .text-\[\#555\] {
     color: #555;
