@@ -8,6 +8,8 @@
       "Courier New", monospace;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --default-font-family: var(--font-sans);
     --default-font-feature-settings: var(--font-sans--font-feature-settings);
     --default-font-variation-settings: var(
@@ -170,8 +172,29 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .-mt-\[6\] {
+    margin-top: calc(6 * -1);
+  }
+  .-mt-\[6px\] {
+    margin-top: calc(6px * -1);
+  }
+  .-mt-\[10px\] {
+    margin-top: calc(10px * -1);
+  }
+  .mt-\[30px\] {
+    margin-top: 30px;
+  }
+  .mt-\[50px\] {
+    margin-top: 50px;
+  }
   .mt-\[100px\] {
     margin-top: 100px;
+  }
+  .mr-\[10p\] {
+    margin-right: 10p;
+  }
+  .mr-\[10px\] {
+    margin-right: 10px;
   }
   .mr-\[16px\] {
     margin-right: 16px;
@@ -191,20 +214,14 @@
   .h-\[60px\] {
     height: 60px;
   }
-  .w-\[6px\] {
-    width: 6px;
-  }
-  .w-\[16px\] {
-    width: 16px;
-  }
   .w-\[20px\] {
     width: 20px;
   }
+  .w-\[40px\] {
+    width: 40px;
+  }
   .w-\[60px\] {
     width: 60px;
-  }
-  .w-\[66px\] {
-    width: 66px;
   }
   .w-\[90\%\] {
     width: 90%;
@@ -212,8 +229,8 @@
   .w-\[100\%\] {
     width: 100%;
   }
-  .w-\[px\] {
-    width: px;
+  .w-\[170px\] {
+    width: 170px;
   }
   .max-w-\[470px\] {
     max-width: 470px;
@@ -238,6 +255,9 @@
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .place-self-center {
+    place-self: center;
   }
   .rounded-\[20px\] {
     border-radius: 20px;
@@ -277,6 +297,9 @@
   .p-0 {
     padding: calc(var(--spacing) * 0);
   }
+  .p-\[0_20px\] {
+    padding: 0 20px;
+  }
   .p-\[10px_25px\] {
     padding: 10px 25px;
   }
@@ -289,9 +312,37 @@
   .font-sans {
     font-family: var(--font-sans);
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
+  .text-\[28px\] {
+    font-size: 28px;
+  }
+  .text-\[45px\] {
+    font-size: 45px;
+  }
+  .text-\[80px\] {
+    font-size: 80px;
+  }
   .font-\[18px\] {
     --tw-font-weight: 18px;
     font-weight: 18px;
+  }
+  .font-\[28px\] {
+    --tw-font-weight: 28px;
+    font-weight: 28px;
+  }
+  .font-\[400\] {
+    --tw-font-weight: 400;
+    font-weight: 400;
+  }
+  .font-\[500\] {
+    --tw-font-weight: 500;
+    font-weight: 500;
   }
   .text-\[\#555\] {
     color: #555;
